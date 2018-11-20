@@ -1,0 +1,42 @@
+body {
+    background-image: url('../images/wood\ texture.jpeg');
+    background-size: cover;
+}
+section {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+@media only screen and (min-width: 1200px) {
+    section {
+        flex-direction: row;
+    }
+}
+#canvas_container, #description {
+    display:block;
+    position: relative;
+}
+canvas {
+    display:block;
+    position: absolute;
+}
+#chess {
+    z-index: 10;
+}
+#description {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: red;
+    font-weight: 900;
+    font-family: Arial, "DFKai-SB";
+    text-shadow: 3px 5px 2px #bb7575;
+}
